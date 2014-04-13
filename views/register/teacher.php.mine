@@ -1,0 +1,88 @@
+
+<form action="<?php echo URL;?>register/registerTeacher/" id="registerInfo"  method="post" >
+        <fieldset>
+          <legend>New Teacher Registration</legend>
+          
+
+            <label>Your User name</label>
+  
+              <input type="text" name="userid" id="userid" placeholder="enter your username"  required> <br />
+         
+		  
+          
+		
+            <label>Name</label>
+	
+
+
+           <input  type="text"  name="fullName" id="fullName" placeholder="First Name"  required>
+		  <input  type="text" name="middleName" id="middleName" placeholder="Middle Name"  required>
+		  <input   type="text" name="lastName" id="lastName" placeholder="last Name"  required> <br />
+
+
+		  
+		  
+		      <label >Password</label>
+              <input type="password" name="password1" id="password1" placeholder="enter password"  required> <br />
+          
+		  
+		    <label>Confirm Password</label>
+              <input type="password" name="password2"  id="password2" placeholder="confirm password"  required onkeyup="checkpass(); "> <br />
+              
+          
+          	  <label >email id</label>
+              <input type="email"  name="email" id="email" placeholder="enter email address"  required> <br />
+          
+          </fieldset>
+          <fieldset>
+          <legend>Contact Information</legend>
+		
+		    <label >Mobile Number</label>
+		      <input type="tel"  name="mobileNumber"  id="mobileNumber" placeholder="enter Mobile number"> <br />
+          
+		  
+		  
+		  
+            <label  >Phone Number</label>
+			  <input type="tel" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}'  name="phoneNumber"  id="phoneNumber" placeholder="Enter Phone number"> <br />
+            
+          
+		    <label>Facebook link</label>
+			  <input type="text" name="facebookLink"  id="facebookLink" placeholder="your Facebook account link"> <br />
+            
+	<legend>Address</legend>
+		 
+	        <label >Address line 1 </label> 
+	          <input type="text" name="addressLine1"  id="addressLine1" placeholder="Address line 1"> <br />
+    	
+    	
+            <label  for="addressLine2">Address Line 2</label>
+		      <input type="text" name="addressLine2"  id="addressLine2" placeholder="Address line 2"> <br />
+          
+	
+        <label >City</label>
+         
+              <select id="city" name="city" >
+                <option>city1</option>
+                <option>city2</option>
+                <option>city3</option>
+                <option>city4</option>
+                <option>city5</option>
+              </select>  
+        
+            <label>  state</label>
+              <input type="text" name="state"  id="state" placeholder="state"> <br />
+
+              <label  >Pin Code</label>
+			  <input type="text"  name="pinCode"  id="pinCode" placeholder="Pincode"  required> <br />
+            
+		    <label  >Land Mark</label>
+			  <input type="text"  pattern="[0-9]{6}" name="landMark" id="landMark" placeholder="Landmark"> <br />
+            
+		</fieldset>
+		<input type="submit" value="Sign up"></input> 
+       </form>
+
+</div>
+
+
